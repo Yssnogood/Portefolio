@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="accueil">
+    <h2>Mon Portfolio</h2>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#experience">Expérience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Bienvenue !</h1>
+    <p>Je suis Place holder :P , développeur web passionné par la création d'interfaces modernes et efficaces.</p>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="apropos" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis un développeur web avec une passion pour la technologie et l'innovation. J'aime créer des applications intuitives et performantes qui répondent aux besoins des utilisateurs. Avec une solide expérience dans diverses technologies, je cherche à collaborer avec des équipes créatives pour transformer des idées en produits concrets.
+    </p>
+  </section>
+
+  <section id="competences" class="competences" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+      <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+      <div class="skill"><i class="fa-brands fa-php"></i> PHP</div>
+      <div class="skill"><i class="fa-brands fa-java"></i> Java</div>
+      <div class="skill"><i class="fa-solid fa-database"></i> SQLite</div>
+      <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+      <div class="skill"><i class="fa-solid fa-dna"></i> NumPy</div>
+      <div class="skill"><i class="fa-brands fa-golang"></i> Golang</div>
+      <div class="skill"><i class="fa-brands fa-react"></i> Next.js</div>
+      <div class="skill"><i class="fa-solid fa-c"></i> C</div>
+      <div class="skill"><i class="fa-brands fa-rust"></i> Rust</div>
+    </div>
+  </section>
+
+  <section id="projets" class="projets" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2>Mes Projets</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Projet 1">
+        <h3>Projet 1</h3>
+        <p>Une application web responsive développée avec React et Node.js.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Projet 2">
+        <h3>Projet 2</h3>
+        <p>Un site vitrine moderne avec animations CSS et SEO optimisé.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Projet 3">
+        <h3>Projet 3</h3>
+        <p>Dashboard interactif en Vue.js avec API REST et authentification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #b11226, #610000);">
+    <h2>Mon Parcours Professionnel</h2>
+    <div class="experience-container">
+      <div class="experience-item">
+        <h3>Développeur Front-End | TechCorp</h3>
+        <p><strong>Janvier 2023 - Présent</strong></p>
+        <p>Développement d'interfaces web modernes et responsives en React.js. Collaboration avec l'équipe de design pour créer des expériences utilisateurs intuitives et performantes.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Développeur Full Stack | WebSolutions</h3>
+        <p><strong>Juin 2021 - Décembre 2022</strong></p>
+        <p>Création d'applications web full-stack avec Node.js et Vue.js. Développement de bases de données et gestion de l'intégration continue pour garantir la stabilité du produit.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Stagiaire Développeur | StartUp Innovate</h3>
+        <p><strong>Juillet 2020 - Mai 2021</strong></p>
+        <p>Assistance dans la création d'un site vitrine dynamique en PHP et MySQL. Rédaction de documentation technique et optimisation des performances du site.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>N'hésitez pas à me contacter pour toute collaboration.</p>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('section-hidden');
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
