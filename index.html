@@ -7,30 +7,30 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="static/favicon.png">
 </head>
 <body>
   <header id="accueil">
-    <h2>Mon Portfolio</h2>
+    <h2> Antoine Morlay</h2>
     <nav>
-      <a href="#accueil">Accueil</a>
+      <a href="#hero">Accueil</a>
       <a href="#apropos">À propos</a>
       <a href="#competences">Compétences</a>
       <a href="#projets">Projets</a>
-      <a href="#experience">Expérience</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <section class="hero" id="hero" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <h1>Bienvenue !</h1>
-    <p>Je suis Place holder :P , développeur web passionné par la création d'interfaces modernes et efficaces.</p>
+    <p>Je suis Antoine, développeur full stack passionné par la création d'applications.</p>
   </section>
 
   <!-- Section À propos -->
   <section id="apropos" class="apropos" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <h2>À propos de moi</h2>
     <p>
-      Je suis un développeur web avec une passion pour la technologie et l'innovation. J'aime créer des applications intuitives et performantes qui répondent aux besoins des utilisateurs. Avec une solide expérience dans diverses technologies, je cherche à collaborer avec des équipes créatives pour transformer des idées en produits concrets.
+      Je suis développeur web et d'applications passionné par les nouvelles technologies et la création de solutions numériques. J’accorde une grande importance à l’expérience utilisateur et à la performance des applications que je conçois. Ayant une expérience polyvalente couvrant plusieurs langages et outils, je recherche à collaborer avec des équipes pour transformer des idées et projets ambitieux en projets concrets.
     </p>
   </section>
 
@@ -49,6 +49,7 @@
       <div class="skill"><i class="fa-brands fa-react"></i> Next.js</div>
       <div class="skill"><i class="fa-solid fa-c"></i> C</div>
       <div class="skill"><i class="fa-brands fa-rust"></i> Rust</div>
+      <div class="skill"><i class="fa-solid fa-lua"></i> Lua</div>
     </div>
   </section>
 
@@ -56,48 +57,74 @@
     <h2>Mes Projets</h2>
     <div class="card-container">
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Projet 1">
-        <h3>Projet 1</h3>
-        <p>Une application web responsive développée avec React et Node.js.</p>
+        <img src="static/pictures/Forum.png" alt="Projet 1">
+        <h3>Projet : Forum</h3>
+        <p>Un forum réalisé en Golang dans le cadre de mes études où des utilisateurs peuvent échanger en créant et commentant des postes.</p>
+        <a href="https://github.com/Yssnogood/Forum">Lien vers le projet</a>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Projet 2">
-        <h3>Projet 2</h3>
-        <p>Un site vitrine moderne avec animations CSS et SEO optimisé.</p>
+        <img src="static/pictures/RealTime.png" alt="Projet 2">
+        <h3>Projet : Real Time Forum</h3>
+        <p>Un forum réalisé en Golang et JavaScript dans le but que des utilisateurs puissent échanger en temps réel à l'aide des websockets.</p>
+        <a href="https://github.com/Yssnogood/Real-Time-Forum">Lien vers le projet</a>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Projet 3">
-        <h3>Projet 3</h3>
-        <p>Dashboard interactif en Vue.js avec API REST et authentification.</p>
+        <img src="static/pictures/BrickBreacker.png" alt="Projet 3">
+        <h3>Projet : Bricks breaker</h3>
+        <p>Un jeu développé en JavaScript qui reprend les codes et gameplay du genre bricks breaker. Ce projet a été fait à fin d'apprendre le langage JavaScript.</p>
+        <a href="https://github.com/Yssnogood/make-your-game">Lien vers le projet</a>
+        </div>
+        <div class="card">
+          <img src="static/pictures/Saak.png" alt="Projet 4">
+          <h3>Projet : SAAK</h3>
+          <p>Un jeu réalisé en Python pour un projet de fin d'année de licence 1 d'informatique et inspiré par des éléments de RPGs et de PuzzleQuest.</p>
+          <a href="https://github.com/Yssnogood/Project-SAAK">Lien vers le projet</a>
+        </div>
+        <div class="card">
+          <img src="static/pictures/Bullet.png" alt="Projet 5">
+          <h3>Projet : Bullet's Hell</h3>
+          <p> Une maquette d'un jeu de type Bullet's Hell réalisée en Python.</p>
+          <a href="https://github.com/Yssnogood/Project-P">Lien vers le projet</a>
+        </div>
+      <div class="card">
+        <img src="static/pictures/Lumina.png" alt="Projet 6">
+        <h3>Projet : Lumina</h3>
+        <p>Lumina est un tchat bot Discord désigné en python et utilisant le Large Language Model (LLM) Ollama pour intéragir avec d'autres utilisateurs.</p>
+        <a href="https://github.com/Yssnogood/Lumina-a-discord-chat-bot">Lien vers le projet</a>
+      </div>
+      <div class="card">
+        <img src="static/pictures/Hector.png" alt="Projet 7">
+        <h3>Projet : Hector</h3>
+        <p>Hector est un bot Discord permettant de chercher et traiter diverses recettes d'objets à travers un base de données du jeu Final Fantasy XIV ainsi qu'obtenir les prix de ces objets grace à l'api de <a href="https://universalis.app">Universalis</a> </p>
+        <a href="https://github.com/Yssnogood/Lumina-a-discord-chat-bot">Lien vers le projet</a>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="experience" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #b11226, #610000);">
-    <h2>Mon Parcours Professionnel</h2>
-    <div class="experience-container">
-      <div class="experience-item">
-        <h3>Développeur Front-End | TechCorp</h3>
-        <p><strong>Janvier 2023 - Présent</strong></p>
-        <p>Développement d'interfaces web modernes et responsives en React.js. Collaboration avec l'équipe de design pour créer des expériences utilisateurs intuitives et performantes.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Développeur Full Stack | WebSolutions</h3>
-        <p><strong>Juin 2021 - Décembre 2022</strong></p>
-        <p>Création d'applications web full-stack avec Node.js et Vue.js. Développement de bases de données et gestion de l'intégration continue pour garantir la stabilité du produit.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Stagiaire Développeur | StartUp Innovate</h3>
-        <p><strong>Juillet 2020 - Mai 2021</strong></p>
-        <p>Assistance dans la création d'un site vitrine dynamique en PHP et MySQL. Rédaction de documentation technique et optimisation des performances du site.</p>
-      </div>
-    </div>
-  </section>
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>N'hésitez pas à me contacter.</p>
+  <ul id="contact-link">
+    <li>
+      <a href="static/Antoine_Morlay_CV.pdf" target="_blank" class="contact-button">
+        <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+      </a>
+    </li>
+    <li>
+      <a href="mailto:morlayantoine@gmail.com" class="contact-button">
+        <i class="fa-solid fa-envelope"></i> Email
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/ton-profil" target="_blank" class="contact-button">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </li>
+  </ul>
+</section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>N'hésitez pas à me contacter pour toute collaboration.</p>
-  </section>
+
+
 
   <script>
     const observer = new IntersectionObserver((entries) => {
